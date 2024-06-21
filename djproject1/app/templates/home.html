@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Home Page</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}"> 
+  </head>
+  <body>
+    <header>
+      <h1>{{intro}}</h1>
+      <h1>Greenfield Academy</h1>
+      <nav>
+        <a href="http://127.0.0.1:8000/app/home">Home</a>
+        <a href="http://127.0.0.1:8000/app/about">About</a>
+        <a href="http://127.0.0.1:8000/app/programs">Programs</a>
+        <a href="http://127.0.0.1:8000/app/admissions">Admissions</a>
+        <a href="http://127.0.0.1:8000/app/contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome to Greenfield Academy</h2>
+      <p>Nurturing Young Minds for a Bright Future</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Academic Excellence"
+        />
+        <h3>Academic Excellence</h3>
+        <p>
+          Our rigorous curriculum ensures students achieve their full potential.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Extracurricular Activities"
+        />
+        <h3>Extracurricular Activities</h3>
+        <p>
+          We offer a wide range of activities to foster well-rounded
+          development.
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Community Engagement"
+        />
+        <h3>Community Engagement</h3>
+        <p>
+          Our school is deeply involved in community service and outreach
+          programs.
+        </p>
+      </div>
+    </section>
+    {% include 'footer.html' %}
+  </body>
+</html>
